@@ -335,7 +335,7 @@
       </element>
     </folder>
     <folder name="Perspectiva relación de servicio" id="116e7681">
-      <element xsi:type="archimate:ArchimateDiagramModel" id="9161d182" name="Realización por procesos">
+      <element xsi:type="archimate:ArchimateDiagramModel" id="9161d182" name="Realización de servicios por procesos">
         <child xsi:type="archimate:DiagramObject" id="af7aaaaa" textAlignment="2" targetConnections="0a941bb5 1d8fe400 3071880e e9d87d5c a9d030fb 66bee0e1 5629b6f5" fillColor="#00ff80" archimateElement="6f1eb374">
           <bounds x="132" y="60" width="1321" height="55"/>
         </child>
