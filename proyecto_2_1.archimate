@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="proyecto_2_1" id="4596f6b9" version="3.1.1">
+  <folder name="Business" id="2fdaaa19" type="business"/>
+  <folder name="Application" id="19b89993" type="application"/>
+  <folder name="Technology" id="3bf0310e" type="technology"/>
+  <folder name="Motivation" id="2d411f40" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="59d21df2" type="implementation_migration"/>
+  <folder name="Connectors" id="f33f6010" type="connectors"/>
+  <folder name="Relations" id="365f317c" type="relations"/>
+  <folder name="Views" id="d4adaa84" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" id="16504c5d" name="Default View"/>
+  </folder>
+</archimate:model>
