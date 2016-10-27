@@ -69,6 +69,7 @@
     <element xsi:type="archimate:BusinessFunction" id="0f188620" name="Business Function"/>
     <element xsi:type="archimate:Product" id="3554e97c" name="Product"/>
     <element xsi:type="archimate:BusinessEvent" id="c3657e89" name="Business Event"/>
+    <element xsi:type="archimate:Meaning" id="15905e0e" name="Meaning"/>
   </folder>
   <folder name="Application" id="55b26e1f" type="application">
     <element xsi:type="archimate:ApplicationComponent" id="cc85cdc6" name="Google.com"/>
@@ -358,7 +359,13 @@
     <element xsi:type="archimate:UsedByRelationship" id="542a4930" source="fcbc26a3" target="d5c1cd19"/>
   </folder>
   <folder name="Views" id="d85762ff" type="diagrams">
-    <folder name="Business Layer" id="bf718913"/>
+    <folder name="Business Layer" id="bf718913">
+      <element xsi:type="archimate:ArchimateDiagramModel" id="7377be35" name="PruebaK">
+        <child xsi:type="archimate:DiagramObject" id="d96263a0" textAlignment="2" archimateElement="15905e0e">
+          <bounds x="456" y="153" width="120" height="55"/>
+        </child>
+      </element>
+    </folder>
     <folder name="Application Layer" id="c9cff2cb">
       <element xsi:type="archimate:ArchimateDiagramModel" id="795f70c2" name="Prueba">
         <child xsi:type="archimate:DiagramObject" id="bbb8207b" textAlignment="2" archimateElement="c3657e89">
