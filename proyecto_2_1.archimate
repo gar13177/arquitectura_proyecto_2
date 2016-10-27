@@ -29,12 +29,31 @@
     <element xsi:type="archimate:BusinessRole" id="7fe2de34" name="Desarrollo plataforma"/>
     <element xsi:type="archimate:BusinessRole" id="3391be15" name="Release, monitorio y ajuste."/>
     <element xsi:type="archimate:BusinessRole" id="4695859f" name="Matenimiento"/>
+    <element xsi:type="archimate:BusinessActor" id="6bcd1ec9" name="Cliente"/>
+    <element xsi:type="archimate:Value" id="ecc19b18" name="Erea Presencial"/>
+    <element xsi:type="archimate:Value" id="b8f8f89f" name="Erea Digital"/>
+    <element xsi:type="archimate:Contract" id="336735ec" name="Contract"/>
+    <element xsi:type="archimate:BusinessService" id="7218696f" name="Servicio de diagnóstico"/>
+    <element xsi:type="archimate:BusinessService" id="de7dd619" name="Servicio de extracción de data"/>
+    <element xsi:type="archimate:BusinessService" id="79b322bc" name="Servicio de diseño"/>
+    <element xsi:type="archimate:BusinessService" id="ebd9c29c" name="Servicio de implementación"/>
+    <element xsi:type="archimate:BusinessService" id="a0b13f25" name="Servicio de release"/>
+    <element xsi:type="archimate:BusinessService" id="4a2d0950" name="Servicio de diagnóstico"/>
+    <element xsi:type="archimate:BusinessService" id="14dbca1d" name="Servicio de diseño"/>
+    <element xsi:type="archimate:BusinessService" id="d0e6409a" name="Servicio de mantenimiento"/>
+    <element xsi:type="archimate:BusinessService" id="c76eed83" name="Servicio de diseño análisis de requerimientos"/>
+    <element xsi:type="archimate:BusinessService" id="6cf0ac8f" name="Servicio de diseño análisis de requerimientos (copy)"/>
   </folder>
   <folder name="Application" id="19b89993" type="application">
     <element xsi:type="archimate:ApplicationService" id="b9c7ade7" name="Servicio de aplicación"/>
     <element xsi:type="archimate:ApplicationComponent" id="5720d5c7" name="Componente de aplicación"/>
     <element xsi:type="archimate:DataObject" id="a306a3c2" name="Objecto de información"/>
     <element xsi:type="archimate:ApplicationFunction" id="3d07c43a" name="Application Function"/>
+    <element xsi:type="archimate:DataObject" id="fa471e98" name="Data Object"/>
+    <element xsi:type="archimate:DataObject" id="6cb9c963" name="Consultoría"/>
+    <element xsi:type="archimate:DataObject" id="77d4bb62" name="Consultoría"/>
+    <element xsi:type="archimate:DataObject" id="6608d860" name="Política de cobros"/>
+    <element xsi:type="archimate:DataObject" id="ed7065da" name="Política de cobros "/>
   </folder>
   <folder name="Technology" id="3bf0310e" type="technology">
     <element xsi:type="archimate:Device" id="4df07e6e" name="Dispositivo"/>
@@ -90,6 +109,12 @@
     <element xsi:type="archimate:TriggeringRelationship" id="181aba57" source="0f857dea" target="7fe2de34"/>
     <element xsi:type="archimate:TriggeringRelationship" id="f7468f19" source="8b428758" target="1cace642"/>
     <element xsi:type="archimate:TriggeringRelationship" id="b3e60524" source="8b428758" target="2b4853a9"/>
+    <element xsi:type="archimate:AssociationRelationship" id="6dda33cd" source="6bcd1ec9" target="ecc19b18"/>
+    <element xsi:type="archimate:AssociationRelationship" id="e8453e6f" source="6bcd1ec9" target="b8f8f89f"/>
+    <element xsi:type="archimate:AssociationRelationship" id="7fe79249" source="ecc19b18" target="6cb9c963"/>
+    <element xsi:type="archimate:AssociationRelationship" id="314d14b1" source="b8f8f89f" target="77d4bb62"/>
+    <element xsi:type="archimate:CompositionRelationship" id="4fd6163b" source="6cb9c963" target="6608d860"/>
+    <element xsi:type="archimate:CompositionRelationship" id="481ecad4" source="77d4bb62" target="ed7065da"/>
   </folder>
   <folder name="Views" id="d4adaa84" type="diagrams">
     <folder name="Introducción" id="fb7e0b2b">
@@ -223,6 +248,65 @@
           <sourceConnection xsi:type="archimate:Connection" id="1987721d" source="e1f84c59" target="1babbe8d" relationship="181aba57">
             <bendpoint startX="-132" startY="6" endX="84" endY="-15"/>
           </sourceConnection>
+        </child>
+      </element>
+    </folder>
+    <folder name="Perspectiva de Producto" id="24a9cf08">
+      <element xsi:type="archimate:ArchimateDiagramModel" id="e56e45c2" name="Producto">
+        <child xsi:type="archimate:DiagramObject" id="e18ea21e" textAlignment="2" archimateElement="6bcd1ec9">
+          <bounds x="409" y="84" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="3df7bc4e" source="e18ea21e" target="3bf20a1b" relationship="6dda33cd"/>
+          <sourceConnection xsi:type="archimate:Connection" id="3ab8dc5c" source="e18ea21e" target="d68c70a5" relationship="e8453e6f"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="3bf20a1b" textAlignment="2" targetConnections="3df7bc4e" archimateElement="ecc19b18">
+          <bounds x="132" y="192" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="7abcd573" source="3bf20a1b" target="d073cc14" relationship="7fe79249"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="d68c70a5" textAlignment="2" targetConnections="3ab8dc5c" archimateElement="b8f8f89f">
+          <bounds x="648" y="192" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="34078931" source="d68c70a5" target="fb4fef3b" relationship="314d14b1"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="d073cc14" textAlignment="2" targetConnections="7abcd573" archimateElement="6cb9c963">
+          <bounds x="60" y="300" width="469" height="265"/>
+          <child xsi:type="archimate:DiagramObject" id="05539018" textAlignment="2" archimateElement="6608d860">
+            <bounds x="204" y="138" width="145" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="a376ac01" textAlignment="2" archimateElement="4a2d0950">
+            <bounds x="48" y="60" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="b1030e33" textAlignment="2" archimateElement="14dbca1d">
+            <bounds x="48" y="138" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="3a3728c0" textAlignment="2" archimateElement="c76eed83">
+            <bounds x="204" y="60" width="145" height="61"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="fb4fef3b" textAlignment="2" targetConnections="34078931" archimateElement="77d4bb62">
+          <bounds x="660" y="300" width="529" height="289"/>
+          <child xsi:type="archimate:DiagramObject" id="5c51edf4" textAlignment="2" archimateElement="ed7065da">
+            <bounds x="385" y="60" width="145" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="5b0edbac" textAlignment="2" archimateElement="7218696f">
+            <bounds x="216" y="60" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="81c893eb" textAlignment="2" archimateElement="de7dd619">
+            <bounds x="24" y="48" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="8dac1c83" textAlignment="2" archimateElement="79b322bc">
+            <bounds x="24" y="144" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="3927b28e" textAlignment="2" archimateElement="ebd9c29c">
+            <bounds x="204" y="144" width="145" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="11c8fa95" textAlignment="2" archimateElement="a0b13f25">
+            <bounds x="385" y="144" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="6161c23b" textAlignment="2" archimateElement="d0e6409a">
+            <bounds x="24" y="228" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="4b1a388c" textAlignment="2" archimateElement="6cf0ac8f">
+            <bounds x="228" y="225" width="145" height="61"/>
+          </child>
         </child>
       </element>
     </folder>
