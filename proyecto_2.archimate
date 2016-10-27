@@ -67,6 +67,7 @@
     <element xsi:type="archimate:BusinessActor" id="e5bdf765" name="Cliente (copy)"/>
     <element xsi:type="archimate:BusinessRole" id="7790a0d6" name="Usuario (copy)"/>
     <element xsi:type="archimate:BusinessFunction" id="0f188620" name="Business Function"/>
+    <element xsi:type="archimate:BusinessEvent" id="c3657e89" name="Business Event"/>
   </folder>
   <folder name="Application" id="55b26e1f" type="application">
     <element xsi:type="archimate:ApplicationComponent" id="cc85cdc6" name="Google.com"/>
@@ -357,7 +358,13 @@
   </folder>
   <folder name="Views" id="d85762ff" type="diagrams">
     <folder name="Business Layer" id="bf718913"/>
-    <folder name="Application Layer" id="c9cff2cb"/>
+    <folder name="Application Layer" id="c9cff2cb">
+      <element xsi:type="archimate:ArchimateDiagramModel" id="795f70c2" name="Prueba">
+        <child xsi:type="archimate:DiagramObject" id="bbb8207b" textAlignment="2" archimateElement="c3657e89">
+          <bounds x="478" y="189" width="120" height="55"/>
+        </child>
+      </element>
+    </folder>
     <folder name="Technology Layer" id="82160fcb">
       <element xsi:type="archimate:ArchimateDiagramModel" id="8c2cdc3a" name="Infrastructura">
         <child xsi:type="archimate:DiagramObject" id="39ccadff" font="1|Arial|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Arial" textAlignment="2" targetConnections="f62e233d" fillColor="#c9e7b7" archimateElement="24163e8e">
