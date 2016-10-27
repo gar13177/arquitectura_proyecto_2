@@ -26,7 +26,7 @@
     <element xsi:type="archimate:BusinessRole" id="6276954d" name="Diseño de la pltaforma"/>
     <element xsi:type="archimate:BusinessRole" id="46225a76" name="Presentación del plan"/>
     <element xsi:type="archimate:BusinessRole" id="7fe2de34" name="Desarrollo plataforma"/>
-    <element xsi:type="archimate:BusinessRole" id="3391be15" name="Release, monitorio y ajuste."/>
+    <element xsi:type="archimate:BusinessRole" id="3391be15" name="Release, monitoreo y ajuste."/>
     <element xsi:type="archimate:BusinessRole" id="4695859f" name="Matenimiento"/>
     <element xsi:type="archimate:BusinessActor" id="6bcd1ec9" name="Cliente"/>
     <element xsi:type="archimate:Value" id="ecc19b18" name="Erea Presencial"/>
@@ -139,6 +139,7 @@
     <element xsi:type="archimate:RealisationRelationship" id="e705fd1e" source="3d05e5d0" target="7218696f"/>
     <element xsi:type="archimate:RealisationRelationship" id="05b1e451" source="396997de" target="de7dd619"/>
     <element xsi:type="archimate:AssociationRelationship" id="cf5cb1db" source="396997de" target="764ceda6"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="c860d5e9" source="6f1eb374" target="692a60e7"/>
   </folder>
   <folder name="Views" id="d4adaa84" type="diagrams">
     <folder name="Introducción" id="fb7e0b2b">
@@ -196,11 +197,6 @@
         </child>
         <child xsi:type="archimate:DiagramObject" id="0418f24f" textAlignment="2" fillColor="#00ffff" archimateElement="cead6094">
           <bounds x="252" y="36" width="505" height="1021"/>
-          <child xsi:type="archimate:Note" id="8adc1d2c" textAlignment="1">
-            <bounds x="336" y="120" width="169" height="49"/>
-            <content>Levantamiento de requerimientos
-</content>
-          </child>
           <child xsi:type="archimate:DiagramObject" id="3f0fa2b6" textAlignment="2" archimateElement="ad725d2d">
             <bounds x="48" y="48" width="120" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="92b45b8b" source="3f0fa2b6" target="8b6ae80a" relationship="88c1a26a"/>
@@ -209,9 +205,8 @@
             <bounds x="275" y="48" width="110" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="8b4363cd" source="18376f51" target="8b6ae80a" relationship="c6d9018f"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="8b6ae80a" textAlignment="2" targetConnections="92b45b8b 8b4363cd" archimateElement="692a60e7">
+          <child xsi:type="archimate:DiagramObject" id="8b6ae80a" textAlignment="2" targetConnections="92b45b8b 8b4363cd bd4e9b83" archimateElement="692a60e7">
             <bounds x="168" y="144" width="120" height="55"/>
-            <sourceConnection xsi:type="archimate:Connection" id="15045b25" source="8b6ae80a" target="d61d2cee" relationship="7a33e76d"/>
             <sourceConnection xsi:type="archimate:Connection" id="e5649af8" source="8b6ae80a" target="a626c116" relationship="f3c42b8a"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="b40bd48c" textAlignment="2" targetConnections="c312718c" archimateElement="d6f9718c">
@@ -260,9 +255,10 @@
             <bounds x="348" y="912" width="120" height="55"/>
           </child>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="d61d2cee" textAlignment="2" targetConnections="15045b25 b7b9ee9f" fillColor="#ffcc66" archimateElement="6f1eb374">
+        <child xsi:type="archimate:DiagramObject" id="d61d2cee" textAlignment="2" targetConnections="b7b9ee9f" fillColor="#ffcc66" archimateElement="6f1eb374">
           <bounds x="804" y="48" width="120" height="181"/>
           <sourceConnection xsi:type="archimate:Connection" id="4974b23c" source="d61d2cee" target="accce188" relationship="01b3d72e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="bd4e9b83" source="d61d2cee" target="8b6ae80a" relationship="c860d5e9"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="e1f84c59" textAlignment="2" targetConnections="eafe9d5a 9e3ff55d" fillColor="#00ff80" archimateElement="0f857dea">
           <bounds x="804" y="300" width="120" height="757"/>
