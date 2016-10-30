@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="proyecto_2_1" id="4596f6b9" version="3.1.1">
   <folder name="Business" id="2fdaaa19" type="business">
-<<<<<<< HEAD
-    <element xsi:type="archimate:BusinessActor" id="9682f1da" name="Erea"/>
-  </folder>
-  <folder name="Application" id="19b89993" type="application"/>
-  <folder name="Technology" id="3bf0310e" type="technology">
-    <element xsi:type="archimate:Artifact" id="1d8455be" name="Artifact"/>
-=======
     <element xsi:type="archimate:BusinessEvent" id="b7cb4c04" name="Evento"/>
     <element xsi:type="archimate:BusinessProcess" id="210f44a1" name="Proceso de Negocio"/>
     <element xsi:type="archimate:BusinessRole" id="5dfc396b" name="º"/>
@@ -46,7 +39,7 @@
     <element xsi:type="archimate:BusinessService" id="a0b13f25" name="Servicio de release"/>
     <element xsi:type="archimate:BusinessService" id="d0e6409a" name="Servicio de mantenimiento"/>
     <element xsi:type="archimate:BusinessService" id="c76eed83" name="Servicio de análisis de requerimientos"/>
-    <element xsi:type="archimate:BusinessProcess" id="c56e8631" name="Proceso de prueebas"/>
+    <element xsi:type="archimate:BusinessProcess" id="c56e8631" name="Proceso de pruebas"/>
     <element xsi:type="archimate:BusinessProcess" id="d4470c8d" name="Proceso de versionameinto"/>
     <element xsi:type="archimate:BusinessProcess" id="c8a595b1" name="Proceso de permisos"/>
     <element xsi:type="archimate:BusinessProcess" id="e4a9df49" name="Proceso de mant. servidores"/>
@@ -71,31 +64,11 @@
   <folder name="Technology" id="3bf0310e" type="technology">
     <element xsi:type="archimate:Device" id="4df07e6e" name="Dispositivo"/>
     <element xsi:type="archimate:Network" id="8d91518d" name="Red"/>
->>>>>>> refs/remotes/origin/master
   </folder>
   <folder name="Motivation" id="2d411f40" type="motivation"/>
-  <folder name="Implementation &amp; Migration" id="59d21df2" type="implementation_migration">
-    <element xsi:type="archimate:WorkPackage" id="c62e46c1" name="Erea Consulting"/>
-    <element xsi:type="archimate:WorkPackage" id="bc9ab0c7" name="Erea Hub"/>
-  </folder>
+  <folder name="Implementation &amp; Migration" id="59d21df2" type="implementation_migration"/>
   <folder name="Connectors" id="f33f6010" type="connectors"/>
   <folder name="Relations" id="365f317c" type="relations">
-<<<<<<< HEAD
-    <element xsi:type="archimate:AssignmentRelationship" id="864a9ea8" source="9682f1da" target="c62e46c1"/>
-    <element xsi:type="archimate:AssignmentRelationship" id="37693393" source="9682f1da" target="bc9ab0c7"/>
-  </folder>
-  <folder name="Views" id="d4adaa84" type="diagrams">
-    <folder name="Perspectiva de Organización" id="e81ce324">
-      <element xsi:type="archimate:ArchimateDiagramModel" id="133ea103" name="Estructura de Organización">
-        <child xsi:type="archimate:DiagramObject" id="b714f749" textAlignment="2" archimateElement="9682f1da">
-          <bounds x="96" y="36" width="769" height="385"/>
-          <child xsi:type="archimate:DiagramObject" id="37d99f26" textAlignment="2" archimateElement="c62e46c1">
-            <bounds x="24" y="36" width="361" height="325"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="a2228355" textAlignment="2" archimateElement="bc9ab0c7">
-            <bounds x="396" y="36" width="348" height="325"/>
-          </child>
-=======
     <element xsi:type="archimate:TriggeringRelationship" id="452c3ece" source="b7cb4c04" target="210f44a1"/>
     <element xsi:type="archimate:TriggeringRelationship" id="1a11c6ef" source="210f44a1" target="ff4ab0ed"/>
     <element xsi:type="archimate:UsedByRelationship" id="3d047ec9" source="ff4ab0ed" target="143a16c0"/>
@@ -396,7 +369,7 @@
           <sourceConnection xsi:type="archimate:Connection" id="7e898806" source="86fab80d" target="34278abc" relationship="e66b400c"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="41429198" textAlignment="2" archimateElement="d4470c8d">
-          <bounds x="1344" y="516" width="120" height="55"/>
+          <bounds x="1332" y="516" width="132" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="722511a2" source="41429198" target="86fab80d" relationship="f14c9575"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="45dd9f9a" textAlignment="2" targetConnections="51e6c807" archimateElement="c8a595b1">
@@ -430,7 +403,6 @@
         </child>
         <child xsi:type="archimate:DiagramObject" id="3d38d54c" textAlignment="2" targetConnections="20406088" archimateElement="764ceda6">
           <bounds x="696" y="504" width="120" height="55"/>
->>>>>>> refs/remotes/origin/master
         </child>
       </element>
     </folder>
