@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="proyecto_2_1" id="4596f6b9" version="3.1.1">
-  <folder name="Business" id="2fdaaa19" type="business"/>
+  <folder name="Business" id="2fdaaa19" type="business">
+    <element xsi:type="archimate:BusinessActor" id="9682f1da" name="Erea"/>
+  </folder>
   <folder name="Application" id="19b89993" type="application"/>
-  <folder name="Technology" id="3bf0310e" type="technology"/>
+  <folder name="Technology" id="3bf0310e" type="technology">
+    <element xsi:type="archimate:Artifact" id="1d8455be" name="Artifact"/>
+  </folder>
   <folder name="Motivation" id="2d411f40" type="motivation"/>
-  <folder name="Implementation &amp; Migration" id="59d21df2" type="implementation_migration"/>
+  <folder name="Implementation &amp; Migration" id="59d21df2" type="implementation_migration">
+    <element xsi:type="archimate:WorkPackage" id="c62e46c1" name="Erea Consulting"/>
+    <element xsi:type="archimate:WorkPackage" id="bc9ab0c7" name="Erea Hub"/>
+  </folder>
   <folder name="Connectors" id="f33f6010" type="connectors"/>
-  <folder name="Relations" id="365f317c" type="relations"/>
+  <folder name="Relations" id="365f317c" type="relations">
+    <element xsi:type="archimate:AssignmentRelationship" id="864a9ea8" source="9682f1da" target="c62e46c1"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="37693393" source="9682f1da" target="bc9ab0c7"/>
+  </folder>
   <folder name="Views" id="d4adaa84" type="diagrams">
+    <folder name="Perspectiva de Organización" id="e81ce324">
+      <element xsi:type="archimate:ArchimateDiagramModel" id="133ea103" name="Estructura de Organización">
+        <child xsi:type="archimate:DiagramObject" id="b714f749" textAlignment="2" archimateElement="9682f1da">
+          <bounds x="96" y="36" width="769" height="385"/>
+          <child xsi:type="archimate:DiagramObject" id="37d99f26" textAlignment="2" archimateElement="c62e46c1">
+            <bounds x="24" y="36" width="361" height="325"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="a2228355" textAlignment="2" archimateElement="bc9ab0c7">
+            <bounds x="396" y="36" width="348" height="325"/>
+          </child>
+        </child>
+      </element>
+    </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" id="16504c5d" name="Default View"/>
   </folder>
 </archimate:model>
