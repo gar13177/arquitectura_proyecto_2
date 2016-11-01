@@ -301,6 +301,36 @@
     <element xsi:type="archimate:AggregationRelationship" id="13497f2d" source="06a2cc2d" target="838c5dc7"/>
     <element xsi:type="archimate:AggregationRelationship" id="d2e37caf" source="06a2cc2d" target="8c577edd"/>
     <element xsi:type="archimate:AssignmentRelationship" id="2e58af31" source="4bdbccc5" target="838c5dc7"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="ada8eedf" source="04354a19" target="3f39c43b"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="b28a8188" source="04354a19" target="10d8b410"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="0a2f2bf2" source="04354a19" target="6b0f9282"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="2286042c" source="6f1eb374" target="04354a19"/>
+    <element xsi:type="archimate:FlowRelationship" id="fecb8ff1" name="Reportes de estado" source="6f1eb374" target="f706bf9c">
+      <documentation>El Cliente brinda los reportes de estado actual a los consultores, para que sean analisados &#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:FlowRelationship" id="15dc8ad6" name="Petición de archivos" source="f706bf9c" target="3f39c43b">
+      <documentation>El Analista ayuda al consultor en el análisis de distintos reportes&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:FlowRelationship" id="0682c2f3" name="Acceso a las bases de datos" source="6f1eb374" target="10d8b410"/>
+    <element xsi:type="archimate:FlowRelationship" id="f44ecf79" name="Acceso a la aplicación" source="6b0f9282" target="6f1eb374">
+      <documentation>El Cliente recibe acceso a la aplicación financiera &#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:FlowRelationship" id="4969529f" name="Requisitos de la data" source="3f39c43b" target="10d8b410">
+      <documentation>El Analista le indica al Data Engineer lo que se quiere evaluar con la data, por lo que el Data Engineer construye el modelo según las necesidades&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:FlowRelationship" id="a2a3cbe9" name="Modelos" source="10d8b410" target="3f39c43b">
+      <documentation>El Data Engineer construye los modelos en base a los requisitos&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:FlowRelationship" id="42a39eb9" source="6b0f9282" target="3f39c43b"/>
+    <element xsi:type="archimate:FlowRelationship" id="bb9c5a83" name="Modelo" source="10d8b410" target="6b0f9282">
+      <documentation>El Data Engineer valida el modelo para que pueda ser liberado en las aplicaciones web</documentation>
+    </element>
+    <element xsi:type="archimate:FlowRelationship" id="7601157b" name="Resultados de análisis" source="3f39c43b" target="f706bf9c"/>
   </folder>
   <folder name="Views" id="d4adaa84" type="diagrams">
     <folder name="Introducción" id="fb7e0b2b">
@@ -759,7 +789,48 @@
           <sourceConnection xsi:type="archimate:Connection" id="f9f4e559" source="62a733ba" target="6956fb39" relationship="2e58af31"/>
         </child>
       </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" id="765ae25b" name="Flujos de información"/>
+      <element xsi:type="archimate:ArchimateDiagramModel" id="765ae25b" name="Flujos de información">
+        <child xsi:type="archimate:DiagramObject" id="06e41163" textAlignment="2" targetConnections="ad6334e7" fillColor="#ffcc66" archimateElement="6f1eb374">
+          <bounds x="12" y="84" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="71f78d5d" source="06e41163" target="f109cbc8" relationship="fecb8ff1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="639817c6" source="06e41163" target="24d3cb08" relationship="0682c2f3"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="91290f64" textAlignment="2" fillColor="#00ffff" archimateElement="04354a19">
+          <bounds x="252" y="60" width="469" height="259"/>
+          <sourceConnection xsi:type="archimate:Connection" id="a3ef87e5" source="91290f64" target="f109cbc8" relationship="1f4a179b"/>
+          <child xsi:type="archimate:DiagramObject" id="f109cbc8" textAlignment="2" targetConnections="a3ef87e5 71f78d5d 06c0ef61" archimateElement="f706bf9c">
+            <bounds x="24" y="24" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="0b2eaaf4" source="f109cbc8" target="bf72c0a6" relationship="15dc8ad6">
+              <bendpoint startX="120" startY="-15" endX="-120" endY="-15"/>
+            </sourceConnection>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="bf72c0a6" textAlignment="2" targetConnections="0b2eaaf4 af11a51c" archimateElement="3f39c43b">
+            <bounds x="264" y="24" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="ce21c95d" source="bf72c0a6" target="24d3cb08" relationship="4969529f">
+              <bendpoint startX="-36" startY="57" endX="204" endY="-75"/>
+              <bendpoint startX="-252" startY="57" endX="-12" endY="-75"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="06c0ef61" source="bf72c0a6" target="f109cbc8" relationship="7601157b">
+              <bendpoint startX="-120" startY="9" endX="120" endY="9"/>
+            </sourceConnection>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="24d3cb08" textAlignment="2" targetConnections="639817c6 ce21c95d" archimateElement="10d8b410">
+            <bounds x="24" y="156" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="af11a51c" source="24d3cb08" target="bf72c0a6" relationship="a2a3cbe9">
+              <bendpoint startX="24" startY="-51" endX="-216" endY="81"/>
+              <bendpoint startX="228" startY="-51" endX="-12" endY="81"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="e0050bb2" source="24d3cb08" target="007d7831" relationship="bb9c5a83"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="007d7831" textAlignment="2" targetConnections="e0050bb2" archimateElement="6b0f9282">
+            <bounds x="264" y="156" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="ad6334e7" source="007d7831" target="06e41163" relationship="f44ecf79">
+              <bendpoint startY="129" endX="504" endY="261"/>
+              <bendpoint startX="-504" startY="129" endY="261"/>
+            </sourceConnection>
+          </child>
+        </child>
+      </element>
     </folder>
     <folder name="Perspectiva de cooperación de proceos de negocio" id="c4d5ec7a">
       <element xsi:type="archimate:ArchimateDiagramModel" id="65d2fc79" name="Procesos, triggers y relaciones">
