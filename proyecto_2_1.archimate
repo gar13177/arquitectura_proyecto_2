@@ -66,6 +66,7 @@
     <element xsi:type="archimate:BusinessProcess" id="7ec99436" name="Elaboración de dashboards"/>
     <element xsi:type="archimate:BusinessProcess" id="6cb622da" name="Elaboración de página web personalizada"/>
     <element xsi:type="archimate:BusinessProcess" id="315db4ba" name="Unión de aplicaciones"/>
+    <element xsi:type="archimate:Location" id="4741af6a" name="Location"/>
   </folder>
   <folder name="Application" id="19b89993" type="application">
     <element xsi:type="archimate:ApplicationService" id="b9c7ade7" name="Servicio de aplicación"/>
@@ -735,6 +736,15 @@
           </child>
         </child>
       </element>
+    </folder>
+    <folder name="Perspectiva de estructura de aplicación" id="6c768b93">
+      <element xsi:type="archimate:ArchimateDiagramModel" id="5e7bb8e5" name="Estructura principal"/>
+    </folder>
+    <folder name="Perspectiva de uso de infraestructura" id="0c86604e">
+      <element xsi:type="archimate:ArchimateDiagramModel" id="4c553372" name="Uso de infraestructura por aplicaciones"/>
+    </folder>
+    <folder name="Perspectiva de implementación" id="a1f9d7d0">
+      <element xsi:type="archimate:ArchimateDiagramModel" id="eb964d7c" name="Implementación"/>
     </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" id="16504c5d" name="Default View"/>
   </folder>
