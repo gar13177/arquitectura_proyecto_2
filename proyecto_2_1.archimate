@@ -892,7 +892,6 @@
           <bounds x="723" y="192" width="126" height="55"/>
         </child>
       </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" id="24545f33" name="Proceso mapeado en funciones"/>
     </folder>
     <folder name="Perspectiva de proceso de negocio" id="3119dca9">
       <element xsi:type="archimate:ArchimateDiagramModel" id="48fd17d4" name="Proceso y uso de información"/>
