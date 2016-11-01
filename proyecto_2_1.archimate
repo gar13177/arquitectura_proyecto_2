@@ -234,6 +234,7 @@
     <element xsi:type="archimate:CompositionRelationship" id="21c8f90e" source="6548c429" target="a44210e4"/>
     <element xsi:type="archimate:CompositionRelationship" id="20f31570" source="6548c429" target="cf164efc"/>
     <element xsi:type="archimate:AssociationRelationship" id="708d4090" source="6548c429" target="4e9521e5"/>
+    <element xsi:type="archimate:AssociationRelationship" id="ef16c59e" source="a149ddc8" target="24a56bfc"/>
   </folder>
   <folder name="Views" id="d4adaa84" type="diagrams">
     <folder name="Introducción" id="fb7e0b2b">
@@ -631,7 +632,7 @@
           <child xsi:type="archimate:DiagramObject" id="698909a0" textAlignment="2" targetConnections="ac4c7849" archimateElement="24591aa3">
             <bounds x="444" y="105" width="120" height="55"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="54bafaa1" textAlignment="2" targetConnections="6448f5e5" archimateElement="24a56bfc">
+          <child xsi:type="archimate:DiagramObject" id="54bafaa1" textAlignment="2" targetConnections="6448f5e5 c8e42084" archimateElement="24a56bfc">
             <bounds x="36" y="72" width="169" height="121"/>
             <child xsi:type="archimate:DiagramObject" id="9167c18f" textAlignment="2" archimateElement="a29bd56a">
               <bounds x="24" y="36" width="120" height="55"/>
@@ -695,7 +696,6 @@
               <bendpoint startX="-168" startY="-111" endX="192" endY="96"/>
               <bendpoint startX="-372" startY="-111" endX="-12" endY="96"/>
             </sourceConnection>
-            <sourceConnection xsi:type="archimate:Connection" id="0651b823" source="39b41b4e" target="90e9a01f" relationship="2b4c69bb"/>
             <sourceConnection xsi:type="archimate:Connection" id="47a56ca4" source="39b41b4e" target="05099903" relationship="f92bbd9e">
               <bendpoint startX="-24" startY="45" endX="246" endY="-120"/>
               <bendpoint startX="-240" startY="45" endX="30" endY="-120"/>
@@ -724,8 +724,9 @@
               </child>
             </child>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="90e9a01f" textAlignment="2" targetConnections="0651b823" archimateElement="a149ddc8">
+          <child xsi:type="archimate:DiagramObject" id="90e9a01f" textAlignment="2" archimateElement="a149ddc8">
             <bounds x="36" y="240" width="169" height="169"/>
+            <sourceConnection xsi:type="archimate:Connection" id="c8e42084" source="90e9a01f" target="54bafaa1" relationship="ef16c59e"/>
             <child xsi:type="archimate:DiagramObject" id="9397d542" textAlignment="2" archimateElement="badb8416">
               <bounds x="24" y="36" width="120" height="55"/>
             </child>
