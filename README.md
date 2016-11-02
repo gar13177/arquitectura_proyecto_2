@@ -15,8 +15,8 @@ Arquitectura Empresarial 2016 Proyecto 2
 11. Perspectiva de uso de aplicación          [PROCESS]
 12. Perspectiva de comportamiento de apl.     [] 
 13. 
-14.
+14. 
 15. 
-16.
+16. 
 17. Perspectiva de comunicación interna       [CHECK V1]
 18. Perspectiva de migración de servidores    []
